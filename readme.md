@@ -6,3 +6,5 @@ Instructions:
 2. Try to click the dinosaur as many times as possible , aim at a perfect score of 1000 points (each click is worth 100 points).
 3. Watch out! The pace increases every time you hit the dinosaur.
 4. Good luck!
+
+Play at https://public.bc.fi/s2300106/speedgame/
