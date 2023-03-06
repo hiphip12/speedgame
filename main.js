@@ -91,6 +91,11 @@ function stop() {
 
 }
 
+function playGameOver() {
+    let finish = new Audio('interface4.wav')
+    finish.play()
+}
+
 const modalShow = () => {
     overlay.classList.toggle('visible')
     modalScore.textContent = scoreCounter * 100
@@ -103,14 +108,15 @@ const modalShow = () => {
     else {
         modalText.textContent = "Excellent! You did great!"
     }
+    playGameOver()
 }
-
 
 function reset() {
     window.location.reload()
 }
 
 closeButton.addEventListener('click', modalShow)
+closeButton.addEventListener('click', playGameOver)
 closeButton.addEventListener('click', reset)
 
 
