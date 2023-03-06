@@ -85,6 +85,7 @@ function startGame() {
 function stop() {
     startButton.classList.remove('offButton')
     startButton.removeEventListener('click', stop)
+    startButton.removeEventListener('click', playBeep)
     startButton.addEventListener('click', startGame)
     modalShow()
     clearTimeout(RndTime)
