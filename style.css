@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 2rem;
+}
+
+body {
+    background-color: rgb(12, 130, 61);
+    font-family: 'Love Ya Like A Sister', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.allCircles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2rem;
+}
+
+.circle {
+    background-color: rgb(188, 225, 226);
+    border-radius: 50%;
+    height: 18vw;
+    width: 18vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.highlightedBtn {
+    background-color: red;
+    background: url(dinosaur-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#onOffButton {
+    background-color: rgb(188, 225, 226);
+    height: 3rem;
+    width: 10rem;
+    margin: 3rem;
+    font-family: 'Love Ya Like A Sister', sans-serif;
+    border-radius: 5%;
+}
+
+#onOffButton:hover {
+    background: lightseagreen;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.308);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.overlay.visible {
+    display: flex;
+}
+
+.modal {
+    background-color: rgb(156, 234, 206);
+    color: black;
+    height: 70vh;
+    width: 90vw;
+    border-radius: 5px;
+    padding: 2rem;
+    position: relative;
+    font-size: x-large;
+    padding-top: 8rem;
+}
+
+.modal button {
+    position: absolute;
+    font-size: 22px;
+    font-weight: bolder;
+    top: 1rem;
+    right: 1rem;
+    width: 2vw;
+    height: 2vw;
+    text-align: center;
+    box-shadow: none;
+    border: none;
+    font-family: 'Love Ya Like A Sister', sans-serif;
+    background-color: transparent;
+
+}
+
+.modal button:hover {
+    color: rgb(48, 132, 48);
+}
+
+
+.offButton {
+    background-color: aliceblue;
+}
+
+#modalScore {
+    font-size: xx-large;
+    font-weight: bolder;
+}
