@@ -41,12 +41,12 @@ function highlighted() {
 }
 
 function playRoar() {
-    let roar = new Audio('retro_sound_1_0.wav')
+    let roar = new Audio('/assets/retro_sound_1_0.wav')
     roar.play()
 }
 
 function playBeep() {
-    let beep = new Audio('beep.wav')
+    let beep = new Audio('/assets/beep.wav')
     beep.play()
 }
 
@@ -92,7 +92,7 @@ function stop() {
 }
 
 function playGameOver() {
-    let finish = new Audio('interface4.wav')
+    let finish = new Audio('/assets/interface4.wav')
     finish.play()
 }
 
