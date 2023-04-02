@@ -9,7 +9,7 @@ This is school project in which a first game was made and practiced implementing
 - Modal display/hide
 - Sounds
 
-![alt text](assets/screenshot_speedgame.png)
+![alt text](assets/screenshot_dinogame.png)
 
 ## Technologies
 - HTML
