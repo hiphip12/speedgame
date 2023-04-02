@@ -2,7 +2,7 @@
 
 ## Description
 
-This is school project in which a first game was made and practiced implementing:
+This is individual school project in which we built a simple game and practiced implementing:
 - classList / add() & remove()
 - setTimeout
 - Math.random()
