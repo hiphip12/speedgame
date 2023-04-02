@@ -13,16 +13,20 @@ let RndTime
 let pace = 1000
 let rounds = 0
 
-const clickCircle = (i) => {
-    console.log('circle index: ', i)
-}
 
 function circleTrack() {
-    circles.forEach((circle, i) => {
-        circle.addEventListener('click', () => clickCircle(i))
-    }
-    )
+    circles.forEach((circle) => {
+        circle.addEventListener('click', clickCircle)
+    });
 }
+
+const clickCircle = (event) => {
+    const clickedCircle = event.target.closest('.circle')
+    if (clickedCircle.id !== targetCircle) {
+        stop()
+    }
+}
+
 
 function highlighted() {
     circles.forEach(circle => circle.classList.remove('highlightedBtn'))
@@ -30,6 +34,7 @@ function highlighted() {
     const pickedCircle = circles[Math.floor(Math.random() * circles.length)]
     pickedCircle.classList.add('highlightedBtn')
     targetCircle = pickedCircle.id
+    highlightedIndex = Array.from(circles).indexOf(pickedCircle)
 
     const newCircle = pickedCircle
     if (newCircle === lastCircle) {
@@ -41,12 +46,12 @@ function highlighted() {
 }
 
 function playRoar() {
-    let roar = new Audio('/assets/retro_sound_1_0.wav')
+    let roar = new Audio('assets/retro_sound_1_0.wav')
     roar.play()
 }
 
 function playBeep() {
-    let beep = new Audio('/assets/beep.wav')
+    let beep = new Audio('assets/beep.wav')
     beep.play()
 }
 
@@ -93,7 +98,7 @@ function stop() {
 }
 
 function playGameOver() {
-    let finish = new Audio('/assets/interface4.wav')
+    let finish = new Audio('assets/interface4.wav')
     finish.play()
 }
 
